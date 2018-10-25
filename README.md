@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+### Quick Links
+* [Live Version](https://percipient24.github.io/demo-calc/)
+* [Slides](https://docs.google.com/presentation/d/1eicVP05-NT262GJOWLOpuITXkrM7HvaMO0luiFsjqN4/edit)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
