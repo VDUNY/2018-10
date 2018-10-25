@@ -3,17 +3,11 @@
   <app-display></app-display>
 
   <div class="buttons">
-    <app-button class="digit" [value]="'1'" (pressed)="display.addToDisplay($event)"></app-button>
-    <app-button class="digit" [value]="'2'" (pressed)="display.addToDisplay($event)"></app-button>
-    <app-button class="digit" [value]="'3'" (pressed)="display.addToDisplay($event)"></app-button>
-    <app-button class="digit" [value]="'4'" (pressed)="display.addToDisplay($event)"></app-button>
-    <app-button class="digit" [value]="'5'" (pressed)="display.addToDisplay($event)"></app-button>
-    <app-button class="digit" [value]="'6'" (pressed)="display.addToDisplay($event)"></app-button>
-    <app-button class="digit" [value]="'7'" (pressed)="display.addToDisplay($event)"></app-button>
-    <app-button class="digit" [value]="'8'" (pressed)="display.addToDisplay($event)"></app-button>
-    <app-button class="digit" [value]="'9'" (pressed)="display.addToDisplay($event)"></app-button>
-    <app-button class="digit" [value]="'0'" (pressed)="display.addToDisplay($event)"></app-button>
+    <ng-container *ngFor="let key of keys">
+      <app-button class="digit" [value]="key" (pressed)="display.addToDisplay($event)"></app-button>
+    </ng-container>
     <app-button class="dot" [value]="'.'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'0'" (pressed)="display.addToDisplay($event)"></app-button>
     <app-button class="clear" [value]="'C'" (pressed)="display.clearDisplay()"></app-button>
   </div>
 

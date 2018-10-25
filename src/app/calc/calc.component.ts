@@ -8,6 +8,8 @@ import { DisplayService } from './display/display.service';
 })
 export class CalcComponent implements OnInit {
 
+  private keys: string[] = '123456789'.split('');
+
   constructor(
     private display: DisplayService
   ) { }
