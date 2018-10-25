@@ -1,3 +1,3 @@
 <div class="display">
-  <p class="numbers">0</p>
+  <p class="numbers">{{(display.display$ | async) || 0}}</p>
 </div>
