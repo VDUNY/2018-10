@@ -37,13 +37,13 @@ export class AppComponent {
       return;
     }
 
-    console.log(event);
-
     if (event.code === 'KeyC') {
       this.display.clearDisplay();
     }
-    else if (event.code === 'Space' && this.calc) {
-      this.calc.flip();
+    else if (event.code === 'Space') {
+      if (this.calc) {
+        this.calc.flip();
+      }
     }
     else {
       this.display.addToDisplay(event.key);
