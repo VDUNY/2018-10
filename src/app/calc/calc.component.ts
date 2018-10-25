@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DisplayService } from './display/display.service';
 
 @Component({
   selector: 'app-calc',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalcComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private display: DisplayService
+  ) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

@@ -2,17 +2,17 @@
 
   <app-display></app-display>
 
-  <app-button [value]="'1'"></app-button>
-  <app-button [value]="'2'"></app-button>
-  <app-button [value]="'3'"></app-button>
-  <app-button [value]="'4'"></app-button>
-  <app-button [value]="'5'"></app-button>
-  <app-button [value]="'6'"></app-button>
-  <app-button [value]="'7'"></app-button>
-  <app-button [value]="'8'"></app-button>
-  <app-button [value]="'9'"></app-button>
-  <app-button [value]="'0'"></app-button>
-  <app-button [value]="'.'"></app-button>
-  <app-button [value]="'C'"></app-button>
+  <app-button [value]="'1'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'2'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'3'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'4'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'5'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'6'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'7'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'8'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'9'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'0'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'.'" (pressed)="display.addToDisplay($event)"></app-button>
+  <app-button [value]="'C'" (pressed)="display.clearDisplay()"></app-button>
 
 </div>
