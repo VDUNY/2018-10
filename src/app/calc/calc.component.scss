@@ -5,6 +5,13 @@
   border-radius: 7px;
   padding: 15px;
   box-shadow: 3px 3px 5px $dark, inset 0 0 10px darken($calc-bg, 20);
+  transition: all 0.75s ease-in-out;
+  transition-property: transform, box-shadow;
+
+  &.inverted {
+    transform: rotate(180deg);
+    box-shadow: -3px -3px 5px $dark, inset 0 0 10px darken($calc-bg, 20);
+  }
 }
 
 .buttons {

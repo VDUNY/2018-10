@@ -1,1 +1,3 @@
-<app-calc></app-calc>
+<app-calc #calc></app-calc>
+
+<app-button [value]="'flip'" (pressed)="calc.flip()"></app-button>
