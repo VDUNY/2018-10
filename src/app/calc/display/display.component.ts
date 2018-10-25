@@ -9,7 +9,7 @@ import { DisplayService } from './display.service';
 export class DisplayComponent implements OnInit {
 
   constructor(
-    private display: DisplayService
+    public display: DisplayService
   ) { }
 
   ngOnInit() { }

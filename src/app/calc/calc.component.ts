@@ -8,16 +8,16 @@ import { DisplayService } from './display/display.service';
 })
 export class CalcComponent implements OnInit {
 
-  private flipped: boolean = false;
-  private keys: string[] = '123456789'.split('');
+  flipped: boolean = false;
+  keys: string[] = '123456789'.split('');
 
   constructor(
-    private display: DisplayService
+    public display: DisplayService
   ) { }
 
   ngOnInit() { }
 
-  public flip(): void {
+  flip(): void {
     this.flipped = !this.flipped;
   }
 
