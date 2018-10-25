@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'scss/variables.scss';
+@import 'scss/reset.scss';
+@import 'scss/fonts.scss';
+
+app-root {
+  display: block;
+  width: 100%;
+}
+
+html {
+  background-color: $app-bg;
+}
+
+.digit button {
+  background-color: $dark;
+}
+
+.clear button {
+  background-color: $clear-bg;
+}
+
+.dot button {
+  background-color: darken($calc-bg, 40);
+  color: $dark;
+}

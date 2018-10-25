@@ -1,0 +1,11 @@
+@import '~src/scss/variables.scss';
+
+button {
+  width: 100%;
+  height: 45px;
+  border-radius: 7px;
+  font-family: sans-serif;
+  color: $light;
+  font-size: 36px;
+  cursor: pointer;
+}

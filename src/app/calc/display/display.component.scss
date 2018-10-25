@@ -1,0 +1,26 @@
+@import '~src/scss/variables.scss';
+
+.display {
+  padding: 10px 5px;
+  font-family: $font-lcd;
+  font-size: 48px;
+  text-align: right;
+  background-color: $display-bg;
+  color: $display-text;
+  box-shadow: inset 0 0 10px $display-text;
+  border: 1px solid darken($calc-bg, 40);
+  position: relative;
+
+  &:before {
+    content: '0000000000';
+    color: darken($display-bg, 10);
+    display: block;
+    position: absolute;
+    right: 5px;
+  }
+}
+
+.numbers {
+  position: relative;
+  z-index: 1;
+}

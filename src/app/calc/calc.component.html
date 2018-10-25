@@ -2,17 +2,19 @@
 
   <app-display></app-display>
 
-  <app-button [value]="'1'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'2'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'3'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'4'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'5'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'6'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'7'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'8'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'9'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'0'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'.'" (pressed)="display.addToDisplay($event)"></app-button>
-  <app-button [value]="'C'" (pressed)="display.clearDisplay()"></app-button>
+  <div class="buttons">
+    <app-button class="digit" [value]="'1'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'2'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'3'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'4'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'5'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'6'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'7'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'8'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'9'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="digit" [value]="'0'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="dot" [value]="'.'" (pressed)="display.addToDisplay($event)"></app-button>
+    <app-button class="clear" [value]="'C'" (pressed)="display.clearDisplay()"></app-button>
+  </div>
 
 </div>

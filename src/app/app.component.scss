@@ -1,0 +1,28 @@
+@import '~src/scss/variables.scss';
+
+app-calc {
+  display: block;
+  margin: 100px auto;
+  width: 400px;
+}
+
+footer {
+  color: darken($light, 20);
+  font-family: sans-serif;
+  font-size: 10px;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  a {
+    color: darken($light, 20);
+    text-decoration: none;
+    &:hover {
+      color: $clear-bg;
+      text-decoration: underline;
+    }
+  }
+}
